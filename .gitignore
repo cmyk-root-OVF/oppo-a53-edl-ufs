@@ -62,9 +62,6 @@ temp/
 # Large binaries (keep source files)
 *.exe
 fastpwn
-
-# Large device loaders (too large for GitHub, add manually if needed)
-Loaders/
 *.elf
 system.img
 boot.img
