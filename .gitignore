@@ -1,0 +1,69 @@
+# Build artifacts
+*.pyc
+__pycache__/
+*.egg-info/
+build/
+dist/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# USB/Device logs
+*.txt
+*.dump
+*.bin
+
+# Local environment
+.env
+.env.local
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Credentials and sensitive files
+*.key
+*.pem
+*.cert
+*.crt
+credentials.json
+secrets.json
+.bash_history
+.ssh/
+
+# Test outputs
+*.img
+*.iso
+test_output/
+
+# Cache
+.cache/
+*.cache
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Device-specific
+*.apk
+*.elf
+system.img
+boot.img
+recovery.img
+
+# History and temp git files
+.git/hooks/
+.git/COMMIT_EDITMSG
+.git/index.lock
