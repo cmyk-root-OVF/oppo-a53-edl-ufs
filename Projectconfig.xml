@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+   <!--NOTE: 1.删除某机型时，将“ <program  project="*****" />”整行删除 **-->
+   <!--NOTE: 2.添加某机型时，将“ <program  project="*****" />”整行添加 **-->
+   <!--NOTE: emmcsize指的是emmc的大小 **-->
+   <program  project="20221" module="UFS (20221)" emmcsize="128G" customize="" />
+</data>
+
