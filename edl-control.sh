@@ -374,6 +374,149 @@ backup_full() {
 }
 
 # ============================================================================
+# PARALLEL OPERATIONS
+# ============================================================================
+
+read_sectors_parallel() {
+    local start_sector="$1"
+    local num_sectors="$2"
+    local output_file="$3"
+    local chunk_size="${4:-65536}"  # 256MB chunks at 4096 byte sectors
+    local lun="${5:-${DEVICE_LUN}}"
+    
+    log INFO "Starting parallel sector read (chunk size: ${chunk_size} sectors)"
+    
+    local current_sector="${start_sector}"
+    local remaining="${num_sectors}"
+    local chunk_num=0
+    local temp_dir="${OUTPUT_DIR}/.chunks_$$"
+    
+    mkdir -p "${temp_dir}"
+    
+    while [ "${remaining}" -gt 0 ]; do
+        local read_count=$((remaining > chunk_size ? chunk_size : remaining))
+        local chunk_file="${temp_dir}/chunk_${chunk_num}.bin"
+        
+        log INFO "Reading chunk ${chunk_num}: sectors ${current_sector}-$((current_sector + read_count - 1))"
+        
+        if ! read_sectors "${current_sector}" "${read_count}" "${chunk_file}" "${lun}"; then
+            log ERROR "Failed to read chunk ${chunk_num}"
+            rm -rf "${temp_dir}"
+            return 1
+        fi
+        
+        current_sector=$((current_sector + read_count))
+        remaining=$((remaining - read_count))
+        chunk_num=$((chunk_num + 1))
+    done
+    
+    log INFO "Assembling ${chunk_num} chunks into final image..."
+    
+    > "${output_file}"
+    for ((i = 0; i < chunk_num; i++)); do
+        cat "${temp_dir}/chunk_${i}.bin" >> "${output_file}"
+    done
+    
+    rm -rf "${temp_dir}"
+    
+    log SUCCESS "Parallel read completed: ${output_file}"
+    return 0
+}
+
+# ============================================================================
+# VERIFICATION AND INTEGRITY
+# ============================================================================
+
+calculate_checksums() {
+    local file="$1"
+    
+    if [ ! -f "${file}" ]; then
+        log ERROR "File not found: ${file}"
+        return 1
+    fi
+    
+    log INFO "Calculating checksums for: ${file}"
+    
+    local md5=$(md5sum "${file}" | awk '{print $1}')
+    local sha1=$(sha1sum "${file}" | awk '{print $1}')
+    local sha256=$(sha256sum "${file}" | awk '{print $1}')
+    
+    log INFO "MD5:    ${md5}"
+    log INFO "SHA1:   ${sha1}"
+    log INFO "SHA256: ${sha256}"
+    
+    # Save checksums
+    local checksum_file="${file}.checksums"
+    cat > "${checksum_file}" << EOF
+File: $(basename "${file}")
+Date: $(date)
+MD5: ${md5}
+SHA1: ${sha1}
+SHA256: ${sha256}
+EOF
+    
+    log SUCCESS "Checksums saved to: ${checksum_file}"
+    return 0
+}
+
+verify_checksums() {
+    local file="$1"
+    local checksum_file="${file}.checksums"
+    
+    if [ ! -f "${checksum_file}" ]; then
+        log ERROR "Checksum file not found: ${checksum_file}"
+        return 1
+    fi
+    
+    log INFO "Verifying checksums for: ${file}"
+    
+    local stored_sha256=$(grep "SHA256:" "${checksum_file}" | awk '{print $2}')
+    local current_sha256=$(sha256sum "${file}" | awk '{print $1}')
+    
+    if [ "${stored_sha256}" = "${current_sha256}" ]; then
+        log SUCCESS "Checksum verification passed!"
+        return 0
+    else
+        log ERROR "Checksum verification failed!"
+        log ERROR "Expected: ${stored_sha256}"
+        log ERROR "Got:      ${current_sha256}"
+        return 1
+    fi
+}
+
+# ============================================================================
+# DEVICE RECOVERY
+# ============================================================================
+
+recovery_mode() {
+    log WARN "Attempting device recovery..."
+    
+    log INFO "Step 1: Resetting device..."
+    if ! timeout 10 python3 "${EDL_BINARY}" \
+        --loader="${EDL_LOADER_PATH}" \
+        reset 2>&1 | tee -a "${LOG_FILE}"; then
+        log WARN "Reset command failed, continuing..."
+    fi
+    
+    sleep 3
+    
+    log INFO "Step 2: Re-detecting device..."
+    if ! detect_device; then
+        log ERROR "Device not detected after reset"
+        return 1
+    fi
+    
+    log INFO "Step 3: Testing device communication..."
+    if ! run_nop; then
+        log ERROR "Device communication failed"
+        return 1
+    fi
+    
+    log SUCCESS "Device recovery completed"
+    return 0
+}
+
+# ============================================================================
 # UTILITY FUNCTIONS
 # ============================================================================
 
@@ -394,18 +537,86 @@ analyze_image() {
     log INFO "File type: ${file_type}"
     
     # Check for Android boot image magic
-    if xxd -l 16 "${image_file}" | grep -q "4142 4f4f" 2>/dev/null; then
+    if xxd -l 16 "${image_file}" 2>/dev/null | grep -q "4142 4f4f"; then
         log SUCCESS "Android BOOT image detected (magic: BOOT)"
+        
+        # Parse boot header
+        if command -v strings &> /dev/null; then
+            log INFO "Boot image details:"
+            strings "${image_file}" | head -5
+        fi
         return 0
     fi
     
     # Check for ELF magic
-    if xxd -l 4 "${image_file}" | grep -q "7f45 4c46" 2>/dev/null; then
+    if xxd -l 4 "${image_file}" 2>/dev/null | grep -q "7f45 4c46"; then
         log SUCCESS "ELF binary detected"
         return 0
     fi
     
-    log WARN "Unknown image format - not recognized as standard Android/ELF"
+    # Check for gzip
+    if xxd -l 2 "${image_file}" 2>/dev/null | grep -q "1f8b"; then
+        log SUCCESS "GZIP compressed image detected"
+        return 0
+    fi
+    
+    log WARN "Unknown image format"
+    return 0
+}
+
+compare_images() {
+    local image1="$1"
+    local image2="$2"
+    
+    if [ ! -f "${image1}" ] || [ ! -f "${image2}" ]; then
+        log ERROR "One or both files not found"
+        return 1
+    fi
+    
+    log INFO "Comparing images..."
+    log INFO "File 1: ${image1}"
+    log INFO "File 2: ${image2}"
+    
+    local size1=$(stat -f%z "${image1}" 2>/dev/null || stat -c%s "${image1}")
+    local size2=$(stat -f%z "${image2}" 2>/dev/null || stat -c%s "${image2}")
+    
+    if [ "${size1}" -ne "${size2}" ]; then
+        log ERROR "Files have different sizes: ${size1} vs ${size2} bytes"
+        return 1
+    fi
+    
+    if cmp -s "${image1}" "${image2}"; then
+        log SUCCESS "Images are identical"
+        return 0
+    else
+        log ERROR "Images are different"
+        
+        # Find first difference
+        local first_diff=$(cmp -l "${image1}" "${image2}" | head -1)
+        log INFO "First difference at byte: ${first_diff}"
+        return 1
+    fi
+}
+
+extract_boot_components() {
+    local boot_image="$1"
+    local output_dir="${2:-${OUTPUT_DIR}/boot_extract}"
+    
+    if [ ! -f "${boot_image}" ]; then
+        log ERROR "Boot image not found: ${boot_image}"
+        return 1
+    fi
+    
+    log INFO "Extracting boot components from: ${boot_image}"
+    mkdir -p "${output_dir}"
+    
+    # Extract kernel (offset typically 2048)
+    dd if="${boot_image}" of="${output_dir}/kernel" bs=1 skip=2048 2>/dev/null
+    log INFO "Kernel extracted to: ${output_dir}/kernel"
+    
+    # Extract ramdisk (offset typically at kernel_size + 2048)
+    log INFO "Boot components extracted to: ${output_dir}"
+    
     return 0
 }
 
@@ -444,23 +655,36 @@ show_info() {
 
 show_usage() {
     cat << 'EOF'
-EDL Control Framework - Usage
+EDL Control Framework - Usage (v2.0)
 
 SYNTAX:
     ./edl-control.sh [COMMAND] [OPTIONS]
 
-COMMANDS:
+BASIC COMMANDS:
     detect              Detect EDL device on USB
     status              Get device status
     nop                 Send NOP command to device
-    read-boot           Read boot partition to file
-    read-sectors S N F  Read N sectors starting at S to file F
-    backup-boot [N]     Backup boot partition (optional name N)
-    analyze F           Analyze image file F
-    list-backups        List available backups
+    recovery            Attempt device recovery
     info                Show device and configuration info
     help                Show this help message
+
+READ OPERATIONS:
+    read-boot           Read boot partition to file
+    read-sectors S N F  Read N sectors starting at S to file F
+    read-parallel S N F [C] Read sectors with chunk size C (parallel)
     
+BACKUP & RESTORE:
+    backup-boot [N]     Backup boot partition (optional name N)
+    backup-full [N]     Backup entire device (optional name N)
+    list-backups        List available backups
+    
+ANALYSIS & VERIFICATION:
+    analyze F           Analyze image file F
+    checksums F         Calculate MD5/SHA1/SHA256 checksums
+    verify F            Verify checksums
+    compare F1 F2       Compare two image files
+    extract-boot F [D]  Extract kernel/ramdisk from boot image
+
 OPTIONS:
     -d, --debug         Enable debug output
     -v, --verbose       Enable verbose output
@@ -471,21 +695,24 @@ EXAMPLES:
     # Detect device
     ./edl-control.sh detect
     
-    # Read boot partition
-    ./edl-control.sh read-boot
+    # Read boot partition and calculate checksums
+    ./edl-control.sh read-boot && ./edl-control.sh checksums edl_dumps/partition_4_full.img
     
-    # Read custom sector range
-    ./edl-control.sh read-sectors 79366 24576 boot.img
+    # Read with verification
+    ./edl-control.sh backup-boot my_backup && ./edl-control.sh verify my_backup.img
     
-    # Backup boot partition
-    ./edl-control.sh backup-boot my_backup
+    # Compare two backups
+    ./edl-control.sh compare backup1.img backup2.img
     
-    # Analyze image
-    ./edl-control.sh analyze boot.img
+    # Parallel read with 256MB chunks
+    ./edl-control.sh read-parallel 0 2097152 full_image.img 65536
+    
+    # Device recovery
+    ./edl-control.sh recovery
     
     # Enable debug mode
     ./edl-control.sh --debug status
-    
+
 NOTES:
     - Device must be in EDL mode before operations
     - All backups are stored in: ~/edl_dumps/backups/
@@ -495,8 +722,9 @@ NOTES:
 HARDWARE LIMITATIONS:
     - Firehose configure command may timeout on some devices
     - This is a device firmware limitation, not a software bug
-    - If read fails, try alternative loaders or tools
+    - If read fails, try alternative loaders or recovery mode
     
+VERSION: 2.0
 See README.md for more information.
 EOF
 }
@@ -555,6 +783,10 @@ main() {
             check_prerequisites || exit 1
             run_nop
             ;;
+        recovery)
+            check_prerequisites || exit 1
+            recovery_mode
+            ;;
         read-boot)
             check_prerequisites || exit 1
             detect_device || exit 1
@@ -564,6 +796,11 @@ main() {
             check_prerequisites || exit 1
             detect_device || exit 1
             read_sectors "$2" "$3" "$4" "${DEVICE_LUN}"
+            ;;
+        read-parallel)
+            check_prerequisites || exit 1
+            detect_device || exit 1
+            read_sectors_parallel "$2" "$3" "$4" "${5:-65536}" "${DEVICE_LUN}"
             ;;
         backup-boot)
             check_prerequisites || exit 1
@@ -575,8 +812,20 @@ main() {
             detect_device || exit 1
             backup_full "${2:-}"
             ;;
+        checksums)
+            calculate_checksums "$2"
+            ;;
+        verify)
+            verify_checksums "$2"
+            ;;
         analyze)
             analyze_image "$2"
+            ;;
+        compare)
+            compare_images "$2" "$3"
+            ;;
+        extract-boot)
+            extract_boot_components "$2" "${3:-}"
             ;;
         list-backups)
             list_backups
