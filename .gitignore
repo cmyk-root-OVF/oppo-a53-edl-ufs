@@ -59,17 +59,12 @@ temp/
 # Device-specific
 *.apk
 
-# EDL large binaries (keep source, exclude huge compiled files)
-edl/fastpwn
-edl/fastpwn.exe
-edl/dist/
-edl/build/
-edl/.git/
-edl/.github/
-edl/.egg-info/
-edl/__pycache__/
-edl/**/__pycache__/
-edl/**/*.pyc
+# Large binaries (keep source files)
+*.exe
+fastpwn
+
+# Large device loaders (too large for GitHub, add manually if needed)
+Loaders/
 *.elf
 system.img
 boot.img
