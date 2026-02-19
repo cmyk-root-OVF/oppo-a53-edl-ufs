@@ -377,7 +377,6 @@ class firehose(metaclass=LogBase):
             tmp = self.cdc.read(timeout=None)
             if tmp == b"":
                 empty_count += 1
-                import time
                 time.sleep(0.05)
             else:
                 empty_count = 0  # Reset on data
@@ -691,7 +690,6 @@ class firehose(metaclass=LogBase):
                         self.error(rsp.error)
                     if attempt < max_retries - 1:
                         self.warning(f"Read attempt {attempt + 1} failed, retrying...")
-                        import time
                         time.sleep(0.5)
                         continue
                     return b""
@@ -731,7 +729,6 @@ class firehose(metaclass=LogBase):
             except Exception as e:
                 self.error(f"Read attempt {attempt + 1} exception: {str(e)}")
                 if attempt < max_retries - 1:
-                    import time
                     time.sleep(0.5)
                     continue
                 return b""
@@ -930,7 +927,6 @@ class firehose(metaclass=LogBase):
             for i in range(0, self.cfg.maxlun):
                 luns.append(i)
                 if i > 0:  # Add delay between LUN transitions for UFS stability
-                    import time
                     time.sleep(1.5)
         else:
             luns = [0]
@@ -948,7 +944,6 @@ class firehose(metaclass=LogBase):
 
         # Give device time to stabilize before configure command
         if lvl == 0:
-            import time
             time.sleep(1.0)
 
         connectcmd = f"<?xml version=\"1.0\" encoding=\"UTF-8\" ?><data>" + \
@@ -1117,7 +1112,6 @@ class firehose(metaclass=LogBase):
                     except Exception as e:
                         self.warning(f"Read attempt {retry + 1} failed: {str(e)}")
                         if retry < max_retries - 1:
-                            import time
                             time.sleep(1)  # Wait before retry
                 if rsp is None:
                     rsp = self.cmd_read_buffer(0, 1, 1, False)
@@ -1154,7 +1148,6 @@ class firehose(metaclass=LogBase):
                         self.cfg.SECTOR_SIZE_IN_BYTES = 4096
                         return self.configure(0)
             self.info("Device configuration complete, waiting for device to be ready...")
-            import time
             time.sleep(0.5)  # Brief stabilization delay
             # Skip storage parsing for UFS - it causes USB disconnect on some devices
             # UFS always uses 4096-byte sectors which we've already set
