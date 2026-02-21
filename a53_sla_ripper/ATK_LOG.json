@@ -1,0 +1,1462 @@
+{
+  "timestamp": "2026-02-19T19:34:16.927009",
+  "total_responses": 1023,
+  "sla_challenges_count": 0,
+  "loader_responses": [],
+  "errors_count": 1024,
+  "responses": [
+    {
+      "timestamp": "2026-02-19T19:34:12.378437",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.416456",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.458637",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.501043",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.545006",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.591226",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.632129",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.675229",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.717221",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.762015",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.809005",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.852922",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.897477",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.945171",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:12.986368",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.031265",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.078765",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.118662",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.162714",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.204448",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.244170",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.286099",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.324972",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.364974",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.408845",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.451149",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.494607",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.543502",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.581538",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.624973",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.664788",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.710034",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.748078",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.785089",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.822699",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.859387",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.897403",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.936000",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:13.975011",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.012495",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.050621",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.087435",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.125426",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.163471",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.204563",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.252211",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.329119",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.411175",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.505003",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.582032",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.656760",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.713219",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.797847",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.844196",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.883996",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.931006",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.971035",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.011044",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.050766",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.093782",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.133983",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.178955",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.243752",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.293035",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.340389",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.386580",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.455571",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.549364",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.645778",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.703952",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.778309",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.839304",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.875920",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.914993",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.950651",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.988162",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.025512",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.062118",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.097590",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.133347",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.171927",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.214623",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.250720",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.287788",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.324621",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.363191",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.401836",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.438176",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.473823",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.509841",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.547895",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.585372",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.622821",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.659217",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.699025",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.737954",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.775053",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.817162",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.862544",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.899418",
+      "source": "pyusb",
+      "type": "peek_response",
+      "status": "OK",
+      "data_hex": "04000000100000000d00000001000000",
+      "data_size": 16,
+      "data_ascii": "\u0004\u0000\u0000\u0000\u0010\u0000\u0000\u0000\r\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+    }
+  ],
+  "sla_challenges": [],
+  "errors": [
+    {
+      "timestamp": "2026-02-19T19:34:14.657107",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f38",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3900,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.714384",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f3c",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3904,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.799513",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f40",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3908,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.844328",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f44",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3912,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.884232",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f48",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3916,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.931143",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f4c",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3920,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:14.971185",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f50",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3924,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.011215",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f54",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3928,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.050981",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f58",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3932,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.093936",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f5c",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3936,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.134453",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f60",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3940,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.182456",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f64",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3944,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.243904",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f68",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3948,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.293258",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f6c",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3952,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.340533",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f70",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3956,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.387119",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f74",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3960,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.455808",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f78",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3964,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.549655",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f7c",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3968,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.646035",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f80",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3972,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.704154",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f84",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3976,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.778557",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f88",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3980,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.839452",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f8c",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3984,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.876046",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f90",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3988,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.915185",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f94",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3992,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.950788",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f98",
+      "context": {
+        "action": "skip_address",
+        "next_address": 3996,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:15.988342",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000f9c",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4000,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.025684",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fa0",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4004,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.062302",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fa4",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4008,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.097759",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fa8",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4012,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.133518",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fac",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4016,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.172117",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fb0",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4020,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.214768",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fb4",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4024,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.250910",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fb8",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4028,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.287922",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fbc",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4032,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.325036",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fc0",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4036,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.363356",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fc4",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4040,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.401974",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fc8",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4044,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.438324",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fcc",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4048,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.474007",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fd0",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4052,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.510019",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fd4",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4056,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.548042",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fd8",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4060,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.585561",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fdc",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4064,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.622994",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fe0",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4068,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.659361",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fe4",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4072,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.699736",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fe8",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4076,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.738102",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000fec",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4080,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.775292",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000ff0",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4084,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.817369",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000ff4",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4088,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.862680",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000ff8",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4092,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T19:34:16.899592",
+      "type": "usb_error_0x04",
+      "message": "Non-standard response at 0x00000ffc",
+      "context": {
+        "action": "skip_address",
+        "next_address": 4096,
+        "skip_size": 4,
+        "reason": "graceful_skip"
+      }
+    }
+  ]
+}

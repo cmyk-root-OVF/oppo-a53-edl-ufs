@@ -1,0 +1,7 @@
+{
+  "qfprom": {
+    "oem_config": "a53_sla_ripper/output/qfprom_oem_config.bin",
+    "anti_rollback": "a53_sla_ripper/output/qfprom_anti_rollback.bin",
+    "serial_number": "a53_sla_ripper/output/qfprom_serial.bin"
+  }
+}
